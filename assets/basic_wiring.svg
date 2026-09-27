@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 620">
+<rect width="1100" height="620" fill="#f5f8fb"/>
+<g font-family="Arial,Helvetica,sans-serif" fill="#132238">
+<text x="40" y="46" font-size="28" font-weight="700">OpenSoccerBot BASIC — wiring</text>
+<text x="40" y="74" font-size="15" fill="#51667d">Arduino Uno · 2WD differential · 1× TB6612FNG · PWM RC receiver</text>
+<g stroke="#8ba0b5" stroke-width="2" fill="#ffffff">
+<rect x="40" y="130" width="190" height="160" rx="12"/><rect x="300" y="110" width="250" height="210" rx="12"/><rect x="620" y="120" width="200" height="180" rx="12"/><rect x="890" y="100" width="150" height="95" rx="12"/><rect x="890" y="220" width="150" height="95" rx="12"/><rect x="890" y="340" width="150" height="95" rx="12"/><rect x="300" y="390" width="250" height="120" rx="12"/>
+</g>
+<g font-size="18" font-weight="700">
+<text x="64" y="160">RC receiver</text><text x="324" y="140">Arduino Uno</text><text x="644" y="150">TB6612FNG</text><text x="920" y="132">Left motor</text><text x="920" y="252">Right motor</text><text x="920" y="372">Kicker servo</text><text x="324" y="420">Power</text>
+</g>
+<g font-size="14" fill="#51667d">
+<text x="64" y="190">CH1 → steering</text><text x="64" y="215">CH2 → throttle</text><text x="64" y="240">CH5 → kicker</text><text x="64" y="265">+5 V / GND</text>
+<text x="324" y="174">D2 ← CH1</text><text x="324" y="198">D3 ← CH2</text><text x="324" y="222">A0 ← CH5</text><text x="324" y="246">D5/D7/D8 → Motor A</text><text x="324" y="270">D6/D9/D10 → Motor B</text><text x="324" y="294">D4 → STBY</text>
+<text x="644" y="182">VM → battery motor rail</text><text x="644" y="207">VCC → regulated logic</text><text x="644" y="232">A01/A02 → left motor</text><text x="644" y="257">B01/B02 → right motor</text><text x="644" y="282">GND common</text>
+<text x="324" y="450">Battery → fuse → switch</text><text x="324" y="474">switch → motor rail</text><text x="324" y="498">switch → 5 V buck/BEC</text>
+</g>
+<g stroke="#2879ae" stroke-width="4" fill="none" stroke-linecap="round">
+<path d="M230 170 C255 170 270 170 300 170"/><path d="M230 215 C255 215 270 195 300 195"/><path d="M230 260 C255 260 270 220 300 220"/>
+<path d="M550 200 C580 200 595 180 620 180"/><path d="M550 245 C580 245 595 225 620 225"/><path d="M820 160 C850 160 855 145 890 145"/><path d="M820 215 C850 215 855 265 890 265"/><path d="M820 265 C850 265 855 385 890 385"/>
+<path d="M550 450 C580 450 590 240 620 240"/><path d="M550 485 C585 485 605 205 620 205"/>
+</g>
+<g fill="#b8d9ef" stroke="#2879ae" stroke-width="2"><circle cx="300" cy="170" r="5"/><circle cx="300" cy="195" r="5"/><circle cx="300" cy="220" r="5"/><circle cx="620" cy="180" r="5"/><circle cx="620" cy="225" r="5"/><circle cx="890" cy="145" r="5"/><circle cx="890" cy="265" r="5"/><circle cx="890" cy="385" r="5"/></g>
+<text x="40" y="575" font-size="13" fill="#6b7f95">Use the firmware pin table as the source of truth. Keep motor and logic power separated and share a common ground.</text>
+</g></svg>

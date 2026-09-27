@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 690">
+<rect width="1200" height="690" fill="#f5f8fb"/>
+<g font-family="Arial,Helvetica,sans-serif" fill="#132238">
+<text x="40" y="46" font-size="28" font-weight="700">OpenSoccerBot ADVANCED — wiring</text>
+<text x="40" y="74" font-size="15" fill="#51667d">ESP32 · 4WD mecanum · 2× TB6612FNG · kicker + dribbler · PWM RC receiver</text>
+<g stroke="#8ba0b5" stroke-width="2" fill="#fff">
+<rect x="40" y="130" width="190" height="180" rx="12"/><rect x="300" y="120" width="220" height="200" rx="12"/><rect x="590" y="100" width="220" height="120" rx="12"/><rect x="590" y="260" width="220" height="120" rx="12"/>
+<rect x="900" y="85" width="125" height="95" rx="12"/><rect x="1045" y="85" width="115" height="95" rx="12"/><rect x="900" y="220" width="125" height="95" rx="12"/><rect x="1045" y="220" width="115" height="95" rx="12"/>
+<rect x="300" y="400" width="220" height="120" rx="12"/><rect x="590" y="430" width="220" height="100" rx="12"/><rect x="900" y="390" width="125" height="95" rx="12"/>
+</g>
+<g font-size="17" font-weight="700">
+<text x="64" y="160">RC receiver</text><text x="324" y="150">ESP32 DevKit</text><text x="614" y="128">TB6612 #1</text><text x="614" y="288">TB6612 #2</text>
+<text x="930" y="110">FL motor</text><text x="1063" y="110">FR motor</text><text x="930" y="245">RL motor</text><text x="1063" y="245">RR motor</text>
+<text x="324" y="430">Mechanisms</text><text x="614" y="460">Power</text><text x="925" y="415">Dribbler</text>
+</g>
+<g font-size="13" fill="#51667d">
+<text x="64" y="190">CH1 → GPIO34</text><text x="64" y="214">CH2 → GPIO35</text><text x="64" y="238">CH4 → GPIO36</text><text x="64" y="262">CH5 → GPIO39</text><text x="64" y="286">CH6 → GPIO13</text>
+<text x="324" y="184">FL 25/4/16</text><text x="324" y="208">FR 26/17/18</text><text x="324" y="232">RL 27/19/21</text><text x="324" y="256">RR 14/22/23</text><text x="324" y="280">Kicker 32</text><text x="324" y="304">Dribbler 33</text>
+<text x="614" y="160">front-left / front-right</text><text x="614" y="184">VM + motors · VCC logic</text><text x="614" y="320">rear-left / rear-right</text><text x="614" y="344">VM + motors · VCC logic</text>
+<text x="324" y="462">GPIO32 → servo signal</text><text x="324" y="486">GPIO33 → MOSFET gate</text><text x="324" y="510">5 V regulated mechanism rail</text>
+<text x="614" y="490">Battery → fuse → switch</text><text x="614" y="514">→ motor rail + buck/BEC</text>
+<text x="925" y="450">Motor → roller</text><text x="925" y="474">stage</text>
+</g>
+<g stroke="#2879ae" stroke-width="4" fill="none" stroke-linecap="round">
+<path d="M230 180 C260 180 270 175 300 175"/><path d="M230 215 C265 215 275 200 300 200"/><path d="M230 250 C265 250 275 225 300 225"/><path d="M230 285 C270 285 280 250 300 250"/><path d="M230 300 C280 300 290 275 300 275"/>
+<path d="M520 170 C555 170 560 150 590 150"/><path d="M520 230 C555 230 560 310 590 310"/>
+<path d="M810 130 C850 130 860 130 900 130"/><path d="M810 150 C890 150 920 170 1045 130"/><path d="M810 300 C860 300 870 270 900 270"/><path d="M810 320 C890 320 940 280 1045 270"/>
+<path d="M520 460 C555 460 560 470 590 470"/><path d="M520 500 C555 500 565 450 590 450"/><path d="M810 480 C850 480 865 430 900 430"/>
+</g>
+<text x="40" y="635" font-size="13" fill="#6b7f95">For ESP32, verify receiver signal voltage before connecting PWM outputs. GPIO 34–39 are input-only on common ESP32-WROOM boards.</text>
+</g></svg>
